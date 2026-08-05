@@ -85,6 +85,33 @@ JavaScript fills the form inputs
 </form>
 ```
 
+## If you want to save the location in Laravel
+Since you're using Laravel, you can send the coordinates/address to your Laravel controller with AJAX:
+
+```JavaScript
+
+fetch("/save-location", {
+    method: "POST",
+    headers: {
+        "Content-Type": "application/json",
+        "X-CSRF-TOKEN": document.querySelector('meta[name="csrf-token"]').content
+    },
+    body: JSON.stringify({
+        latitude: lat,
+        longitude: lon,
+        country: country,
+        state: state,
+        city: city,
+        area: area,
+        address: fullAddress
+    })
+})
+.then(response => response.json())
+.then(data => {
+    console.log(data);
+});
+```
+
 
 
 ## 🔐 Browser Permissions
