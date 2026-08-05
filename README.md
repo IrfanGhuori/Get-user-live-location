@@ -1,3 +1,5 @@
+![Alt text](/img/image-2.png)
+
 # 📍 Browser Location to Form Inputs
 
 A simple JavaScript project that automatically detects the user's **latitude and longitude**, converts the coordinates into a readable address using the **OpenStreetMap Nominatim API**, and fills the location information into HTML form inputs.
