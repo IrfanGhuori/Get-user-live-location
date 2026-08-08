@@ -40,6 +40,10 @@ The returned address is automatically inserted into the form.
 location-form/
 │
 ├── index.html
+├── src/
+│   ├── map.js
+│   ├── reactMap.jsx
+│   └── ReactAppExample.jsx
 └── README.md
 ```
 
@@ -86,6 +90,25 @@ JavaScript fills the form inputs
 
 </form>
 ```
+
+## ⚛️ React Version
+
+A React-friendly version is also included in the project:
+
+- [src/reactMap.jsx](src/reactMap.jsx) — the React component that requests the user's location and fills the form-like fields
+- [src/ReactAppExample.jsx](src/ReactAppExample.jsx) — a simple example export for rendering the component
+
+Example usage:
+
+```jsx
+import ReactLiveLocation from './reactMap';
+
+function App() {
+  return <ReactLiveLocation />;
+}
+```
+
+This version uses the same geolocation and reverse geocoding flow as the plain JavaScript version, but it runs inside a React component.
 
 ## If you want to save the location in Laravel
 Since you're using Laravel, you can send the coordinates/address to your Laravel controller with AJAX:
