@@ -2,21 +2,18 @@
 
 # 📍 Browser Location to Form Inputs
 
-A simple JavaScript project that automatically detects the user's **latitude and longitude**, converts the coordinates into a readable address using the **OpenStreetMap Nominatim API**, and fills the location information into HTML form inputs.
+A lightweight browser location utility that gets the user's current position, reverse geocodes it through **OpenStreetMap Nominatim**, fills address details into HTML form fields, and exposes a live **Google Maps** link for the detected location.
 
 ## ✨ Features
 
-* 📍 Get the user's current GPS location
-* 🌎 Detect country
-* 🗺️ Detect state/province
-* 🏙️ Detect city/town/village
-* 📌 Detect area/neighborhood
-* 📮 Detect postcode
-* 🏠 Get full address
-* 🌐 Get latitude and longitude
-* 📝 Automatically fill HTML form inputs
-* 🔑 No API key required for basic Nominatim usage
+* 📍 Detect the user's current GPS coordinates
+* 🌎 Convert coordinates into address fields using Nominatim
+* 🏠 Fill form inputs for country, state, city, area, postcode, and full address
+* 🌐 Store latitude and longitude values alongside the address
+* 🔗 Generate a Google Maps link for the current location
+* 🔑 No API key required for Nominatim reverse geocoding
 * 💻 Pure JavaScript — no framework required
+* 🔗 Includes a button that generates a Google Maps link for the current location
 
 ## 🚀 Demo
 
@@ -33,6 +30,8 @@ https://nominatim.openstreetmap.org/reverse
 ```
 
 The returned address is automatically inserted into the form.
+
+The page also includes a Google Maps link that uses the detected latitude and longitude to open the user's current position in Google Maps.
 
 ## 📂 Project Structure
 
