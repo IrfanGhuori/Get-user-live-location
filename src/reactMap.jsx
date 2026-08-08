@@ -1,3 +1,8 @@
+/*!
+ * jQuery Live Location Plugin
+ * Version: 2.0.0
+ * Author: Irfan Ghuori
+ */
 import React, { useEffect, useState } from 'react';
 
 const initialLocation = {
